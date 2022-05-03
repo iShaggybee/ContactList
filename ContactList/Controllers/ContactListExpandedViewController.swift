@@ -8,15 +8,10 @@
 import UIKit
 
 class ContactListExpandedViewController: UITableViewController {
-    let countOfRowsInSection = 2
     var contacts: [Person]!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        countOfRowsInSection
+        2
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

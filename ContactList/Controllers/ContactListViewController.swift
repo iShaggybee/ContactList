@@ -9,10 +9,6 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
     var contacts: [Person]!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contacts.count

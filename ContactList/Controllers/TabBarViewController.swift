@@ -8,11 +8,15 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-    let contacts = Person.getPersonList()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let contacts = Person.getPersonList()
+        
+        initViewControllers(contacts: contacts)
+    }
+    
+    private func initViewControllers(contacts: [Person]) {
         for viewController in viewControllers ?? [] {
             guard let navigationVC = viewController as? UINavigationController else { return }
             
